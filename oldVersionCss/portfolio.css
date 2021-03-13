@@ -1,0 +1,170 @@
+.button-style {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  color: #212121;
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-style:hover,
+.button-style:focus {
+  color: #fff;
+  background-color: var(--logo-special-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.portfolio-list-titles {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  outline: 1px solid var(--color-for-outline);
+}
+.portfoliio-list-description {
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--special-grey-color);
+  outline: 1px solid var(--color-for-outline);
+
+  margin-top: 4px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.portfolio-image-item {
+  width: 369px;
+  height: 294px;
+  outline: 1px solid var(--color-for-outline);
+  overflow: hidden;
+}
+
+/* HW nr. 3 */
+
+.flex-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 34px;
+}
+.flex-btn li:not(:first-child) {
+  margin-left: 8px;
+  outline: 1px solid var(--color-for-outline);
+}
+.container-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  outline: 1px solid var(--color-for-outline);
+  margin-bottom: 64px;
+}
+
+.container-portfolio li {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.portfolio-text {
+  width: 370px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-text:hover,
+.portfolio-text:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-portfolio li:not(:nth-child(3n + 1)) {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  outline: 1px solid var(--color-for-outline);
+}
+
+.container-portfolio li:nth-child(3n + 1) {
+  margin-left: 0px;
+  margin-bottom: 30px;
+  outline: 1px solid var(--color-for-outline);
+}
+
+.portfolio-text h2 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+/* .portfolio-text p {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+} */
+
+/* HW nr. 5 */
+
+.nav-pointer {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-pointer::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--logo-special-color);
+  border-radius: 2px;
+}
+
+.overlay-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 63px 24px;
+  margin: 0 0;
+
+  width: 369px;
+  height: 294px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #fff;
+
+  opacity: 0;
+  transform: translateY(100%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-text:hover .overlay-text {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.container-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+/* HW nr. 6 */
